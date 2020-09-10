@@ -43,9 +43,12 @@ weatherForm.addEventListener('submit', (e) => {
 
 checkbox.addEventListener('change', (e) => {
 
-    if(e.target.checked){
+    if (retainedInput !== ''){
+
+        if(e.target.checked){
         getWeather(retainedInput, units='m')
-    } else { 
+        } else { 
         getWeather(retainedInput, units='f')
-        }
+            }
+    }
 })
