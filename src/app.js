@@ -53,7 +53,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some help text',
+        helpText: 'This app is simple to use. Simply type in the location to inquire about the weather to and hit the search button.',
         title: 'Help',
         name: 'Miguel Zeng'
     })
@@ -84,7 +84,7 @@ app.get('/weather', (req, res) => {
 
         //the two functions communicate
         //forecast takes in a callback
-        forecast(latitude, longitude, (error, forecastData) => {
+        forecast(latitude, longitude, units=req.query.units, (error, forecastData) => {
             if (error) {
                 return res.send({ error })
             }
