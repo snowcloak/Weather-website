@@ -42,7 +42,7 @@ weatherForm.addEventListener('submit', (e) => {
 })
 
 checkbox.addEventListener('change', (e) => {
-    if (retainedInput !== ''){
+    if (retainedInput !== '' && message1.textContent !== 'Unable to find location' && message1.textContent !== 'Unable to connect to weather services' && message1.textContent !== 'You must provide a location'){
         if(e.target.checked){
         getWeather(retainedInput, units='m')
         } else { 
