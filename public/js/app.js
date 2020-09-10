@@ -20,7 +20,7 @@ const getWeather = (location, units) => {
         })
 }
 
-let retainedInput
+let retainedInput = ''
 
 weatherForm.addEventListener('submit', (e) => {
     //checkbox checker (on switch)

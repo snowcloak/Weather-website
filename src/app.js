@@ -53,7 +53,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This app is simple to use. Simply type in the location to inquire about the weather to and hit the search button. There is a Celsius mode to toggle to view Celsius degrees. The default is in Fahrenheit.',
+        helpText: 'This app is simple to use. Simply type in the location to inquire about the weather and hit the search button. There is a Celsius mode to toggle to view degrees in Celsius. The default is in Fahrenheit.',
         title: 'Help',
         name: 'Miguel Zeng'
     })
